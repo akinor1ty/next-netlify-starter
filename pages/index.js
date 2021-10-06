@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -17,10 +17,12 @@ export default function Home() {
         </h1>
 
         <Link href="/about">GO TO ABOUT</Link>
+        <Link href="/orgs/1">GO TO ORG1</Link>
+        <Link href="/orgs/2">GO TO ORG2</Link>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Get started by editing{" "}
+          <code className={styles.code}>pages/[id].js</code>
         </p>
 
         <div className={styles.grid}>
@@ -60,11 +62,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-          </span>
+          Powered by <span className={styles.logo}></span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
